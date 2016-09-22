@@ -15,7 +15,7 @@ Listen for udp port 514 on `localhost` and save logs to `/var/log/syslog-ng`:
 ```
 docker run -d -p 127.0.0.1:514:514/udp \
     -v /var/log/syslog-ng:/var/log/syslog-ng \
-    --name syslog-ng bobrik/syslog-ng
+    --name syslog-ng makeomatic/syslog-ng
 ```
 
 If you want to export unix socket, just bind-mount `/var/run/syslog-ng` to host somewhere.
